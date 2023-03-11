@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.high.dao.UsersDao">
+<!--    <select id="login" resultType="Users">-->
+<!--        select * from users where uname=#{uname} and password=#{password}-->
+<!--    </select>-->
+
+<!--    <insert id="insert">-->
+<!--        insert into users(uname,password,status,utype) VALUES (#{uname},#{password},0,0)-->
+<!--    </insert>-->
+
+<!--    <select id="exists" resultType="Users">-->
+<!--        select * from users where uname=#{uname}-->
+<!--    </select>-->
+
+<!--    <select id="votelist" resultType="Map">-->
+<!--        select stype,sid,title,count(o_sid) xx,count(v_oid) tp from `subject` s left join `options` o on s.sid=o_sid-->
+<!--        left join-->
+<!--        vote v on o.oid=v.v_oid-->
+<!--        <where>-->
+<!--            <if test="sid!=null">-->
+<!--                sid=#{sid}-->
+<!--            </if>-->
+<!--        </where>-->
+<!--        GROUP BY title-->
+<!--    </select>-->
+
+<!--    <select id="selectOptions" resultType="Options">-->
+<!--        select * from `options` where o_sid=#{o_sid}-->
+<!--    </select>-->
+
+<!--    <insert id="insertVote">-->
+<!--        insert into vote(v_uid,v_sid,v_oid) values(#{v_uid},#{v_sid},#{v_oid})-->
+<!--    </insert>-->
+
+<!--    <insert id="addvote">-->
+<!--        insert into `subject`(title,stype) values(#{title},#{stype})-->
+<!--    </insert>-->
+
+<!--    <select id="max" resultType="int">-->
+<!--        select max(sid) from subject-->
+<!--    </select>-->
+
+<!--    <insert id="addOptions">-->
+<!--        insert into `options`(context,o_sid) values(#{context},#{o_sid})-->
+<!--    </insert>-->
+
+<!--    <delete id="deletevote">-->
+<!--        delete from vote where v_sid=#{v_sid}-->
+<!--    </delete>-->
+
+<!--    <delete id="deleteoptions">-->
+<!--        delete from `options` where o_sid=#{o_sid}-->
+<!--    </delete>-->
+
+<!--    <delete id="deletesubject">-->
+<!--        delete from `subject` where sid=#{sid}-->
+<!--    </delete>-->
+
+<!--    <select id="selectlike" resultType="Map">-->
+<!--        select stype,sid,title,count(o_sid) xx,count(v_oid) tp from `subject` s left join `options` o on s.sid=o_sid-->
+<!--        left join vote v on o.oid=v.v_oid WHERE title like #{title} GROUP BY title-->
+<!--    </select>-->
+
+<!--    <update id="updateStatus">-->
+<!--        update users set `status`=#{status} where uid=#{uid}-->
+<!--    </update>-->
+</mapper>

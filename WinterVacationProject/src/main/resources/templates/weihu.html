@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>管理投票</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script>
+        function del(id) {
+            if (confirm('确定要删除？')) {
+                location.href = 'Subject-remove.action?entityId=' + id;
+            }
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="header" class="wrap">
+    <img src="images/logo.gif">
+</div>
+<div id="navbar" class="wrap">
+    <div class="profile">
+        您好，admin
+        <span class="return"><a href="Subject-list.action">返回列表</a></span>
+        <span class="addnew"><a href="Subject-add.action">添加新投票</a></span>
+        <span class="modify"><a href="Subject-modify.action">维护</a></span>
+        <span class="return"><a href="User-exit.action">注销</a></span>
+    </div>
+    <div class="search">
+        <form method="post" action="Subject-search.action">
+            <input type="text" name="keywords" class="input-text" value=""><input type="submit" name="submit"
+                                                                                  class="input-button" value="">
+        </form>
+    </div>
+</div>
+
+<div id="vote" class="wrap">
+    <h2>投票列表</h2>
+    <div style="float: right">
+        <a href="Subject-modify?pageIndex=1">首页</a> |
+
+        上一页
+
+        |
+
+        下一页
+
+        |
+        <a href="Subject-modify?pageIndex=1">末页</a>
+    </div>
+    <br>
+    <ul class="list">
+
+
+        <li class="odd">
+            <h4>
+                <em>
+                    <a href="Subject-add.action?entityId=17">维护</a>
+                    <a href="javascript:del(17)">删除</a>
+                </em>
+                <a href="#">7777</a>
+            </h4>
+            <p class="info">共有 4 个选项，已有
+
+                1
+                个投票。</p>
+        </li>
+
+        <li>
+            <h4>
+                <em>
+                    <a href="Subject-add.action?entityId=13">维护</a>
+                    <a href="javascript:del(13)">删除</a>
+                </em>
+                <a href="#">admin</a>
+            </h4>
+            <p class="info">共有 3 个选项，已有
+
+                3
+                个投票。</p>
+        </li>
+
+        <li class="odd">
+            <h4>
+                <em>
+                    <a href="Subject-add.action?entityId=12">维护</a>
+                    <a href="javascript:del(12)">删除</a>
+                </em>
+                <a href="#">伟大</a>
+            </h4>
+            <p class="info">共有 2 个选项，已有
+
+                1
+                个投票。</p>
+        </li>
+
+        <li>
+            <h4>
+                <em>
+                    <a href="Subject-add.action?entityId=8">维护</a>
+                    <a href="javascript:del(8)">删除</a>
+                </em>
+                <a href="#">就业城市</a>
+            </h4>
+            <p class="info">共有 2 个选项，已有
+
+                1
+                个投票。</p>
+        </li>
+
+    </ul>
+    <div style="float: right">
+        <a href="Subject-modify?pageIndex=1">首页</a> |
+
+        上一页
+
+        |
+
+        下一页
+
+        |
+        <a href="Subject-modify?pageIndex=1">末页</a>
+    </div>
+</div>
+<div id="footer" class="wrap">
+    北大青鸟 © 版权所有
+</div>
+
+
+</body>
+</html>
