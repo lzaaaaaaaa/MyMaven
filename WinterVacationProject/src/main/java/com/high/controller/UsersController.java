@@ -22,6 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+//加了注释
 @Controller
 public class UsersController {
     @Resource
